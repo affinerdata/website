@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Affiner</title>
+<meta name="description" content="Affiner">
+<meta name="theme-color" content="#DCE2E5">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23283540'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,100..900&display=swap">
+<style>
+  html, body { height: 100%; margin: 0; }
+  body {
+    display: grid;
+    place-items: center;
+    background: #DCE2E5;
+    padding: env(safe-area-inset-top, 0) 1.5rem env(safe-area-inset-bottom, 0);
+    box-sizing: border-box;
+  }
+  h1 {
+    margin: 0;
+    font-family: 'Piazzolla', Georgia, 'Times New Roman', serif;
+    font-weight: 465;
+    font-variation-settings: 'opsz' 30;
+    font-size: clamp(2rem, 3vw, 2.75rem);
+    letter-spacing: 0.015em;
+    line-height: 1;
+    color: #283540;
+    animation: in 1.2s ease-out both;
+  }
+  @keyframes in { from { opacity: 0; } to { opacity: 1; } }
+  @media (prefers-reduced-motion: reduce) { h1 { animation: none; } }
+</style>
+</head>
+<body>
+<h1>Affiner</h1>
+</body>
+</html>
