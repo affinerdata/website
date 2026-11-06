@@ -4,34 +4,64 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Affiner</title>
-<meta name="description" content="Affiner">
+<meta name="description" content="Signal from data">
 <meta name="theme-color" content="#DCE2E5">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23283540'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,100..900&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Piazzolla:opsz,wght@8..30,100..900&family=Geist:wght@100..900&display=swap">
 <style>
   html, body { height: 100%; margin: 0; }
   body {
     display: grid;
-    place-items: center;
+    grid-template-rows: 1fr auto;
     background: #DCE2E5;
+    color: #283540;
+    font-family: 'Piazzolla', Georgia, 'Times New Roman', serif;
     padding: env(safe-area-inset-top, 0) 1.5rem env(safe-area-inset-bottom, 0);
     box-sizing: border-box;
   }
+  main {
+    display: grid;
+    place-items: center;
+    align-content: center;
+    gap: 1rem;
+    text-align: center;
+  }
   h1 {
     margin: 0;
-    font-family: 'Piazzolla', Georgia, 'Times New Roman', serif;
     font-weight: 465;
     font-variation-settings: 'opsz' 30;
     font-size: clamp(2rem, 3vw, 2.75rem);
     letter-spacing: 0.015em;
     line-height: 1;
-    color: #283540;
+  }
+  p {
+    margin: 0 -0.16em 0 0;
+    font-family: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-weight: 450;
+    font-size: 0.8125rem;
+    line-height: 1;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #6D7882;
+  }
+  footer {
+    padding: 0 0 1.5rem;
+    text-align: center;
+    font-family: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
+    color: #7C8790;
   }
 </style>
 </head>
 <body>
-<h1>Affiner</h1>
+<main>
+  <h1>Affiner</h1>
+  <p>Signal from data</p>
+</main>
+<footer>© <span id="year">2026</span> Affiner</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
